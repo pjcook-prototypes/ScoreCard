@@ -23,7 +23,7 @@ struct BestScoreButton: View {
         } label: {
             Text("\(score.value)")
                 .padding(24)
-                .foregroundColor(.white)
+                .foregroundColor(.lightText)
         }
         .simultaneousGesture(LongPressGesture().onEnded({ _ in
             canTap = false

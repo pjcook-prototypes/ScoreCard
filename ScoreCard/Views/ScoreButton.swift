@@ -21,7 +21,7 @@ struct ScoreButton: View {
         } label: {
             Text("\(score)")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .foregroundColor(.white)
+                .foregroundColor(.lightText)
         }
         .simultaneousGesture(LongPressGesture().onEnded({ _ in
             canTap = false

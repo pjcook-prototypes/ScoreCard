@@ -15,7 +15,7 @@ struct RowHeader: View {
             .foregroundColor(Color(uiColor: .lightGray))
             .overlay {
                 Text("\(i+1)")
-                    .foregroundColor(.white)
+                    .foregroundColor(.lightText)
                 
             }
     }

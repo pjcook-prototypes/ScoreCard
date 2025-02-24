@@ -13,13 +13,13 @@ struct MoreColumnFooter: View {
     var body: some View {
         HStack {
             Circle()
-                .foregroundColor(.white)
+                .foregroundColor(.lightText)
             ForEach(0..<4) { i in
                 Circle()
                     .foregroundColor(.gray)
                     .overlay {
                         Text("\(total(for: i))")
-                            .foregroundColor(.white)
+                            .foregroundColor(.lightText)
                     }
             }
         }

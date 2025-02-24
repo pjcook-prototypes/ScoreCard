@@ -14,7 +14,7 @@ struct BestScoreCardScene: View {
         VStack {
             Header(gameName: $viewModel.gameName)
             
-            ColumnHeadings(ballColors: viewModel.ballColors)
+            ColumnHeadings(ballColors: viewModel.ballColors, reset: viewModel.reset)
             
             BestButtonsView(scores: viewModel.scores)
             

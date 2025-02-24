@@ -20,6 +20,11 @@ final class BestScoreCardViewModel: ObservableObject {
     func scoreFor(row: Int, col: Int) -> Score {
         scores.scoreFor(row: row, col: col)
     }
+    
+    func reset() {
+        gameName = ""
+        scores.reset()
+    }
 }
 
 final class Scores: ObservableObject {
@@ -37,6 +42,11 @@ final class Scores: ObservableObject {
         for _ in 0..<4 {
             totals.append(Score())
         }
+    }
+    
+    func reset() {
+        scores.forEach { $0.value = 0 }
+        totals.forEach { $0.value = 0 }
     }
     
     func scoreFor(row: Int, col: Int) -> Score {

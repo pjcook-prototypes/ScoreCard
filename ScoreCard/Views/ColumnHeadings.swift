@@ -17,10 +17,10 @@ struct ColumnHeadings: View {
                 reset?()
             }) {
                 Circle()
-                    .foregroundColor(.white)
+                    .foregroundColor(.lightText)
                     .overlay {
                         Text("Clear")
-                            .foregroundColor(.black)
+                            .foregroundColor(.darkText)
                         
                     }
             }

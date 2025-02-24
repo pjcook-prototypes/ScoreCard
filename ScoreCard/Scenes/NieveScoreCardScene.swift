@@ -22,10 +22,10 @@ struct NieveScoreCardScene: View {
                     reset()
                 }) {
                     Circle()
-                        .foregroundColor(.white)
+                        .foregroundColor(.lightText)
                         .overlay {
                             Text("Clear")
-                                .foregroundColor(.black)
+                                .foregroundColor(.darkText)
                             
                         }
                 }
@@ -51,7 +51,7 @@ struct NieveScoreCardScene: View {
                             .foregroundColor(Color(uiColor: .lightGray))
                             .overlay {
                                 Text("\(i+1)")
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.lightText)
                                 
                             }
 
@@ -60,7 +60,7 @@ struct NieveScoreCardScene: View {
                         } label: {
                             Text("\(scores[i][0])")
                                 .padding(24)
-                                .foregroundColor(.white)
+                                .foregroundColor(.lightText)
                         }
                         .background {
                             RoundedRectangle(cornerSize: CGSize(width: 8, height: 8))
@@ -72,7 +72,7 @@ struct NieveScoreCardScene: View {
                         } label: {
                             Text("\(scores[i][1])")
                                 .padding(24)
-                                .foregroundColor(.white)
+                                .foregroundColor(.lightText)
                         }
                         .background {
                             RoundedRectangle(cornerSize: CGSize(width: 8, height: 8))
@@ -83,7 +83,7 @@ struct NieveScoreCardScene: View {
                         } label: {
                             Text("\(scores[i][2])")
                                 .padding(24)
-                                .foregroundColor(.white)
+                                .foregroundColor(.lightText)
                         }
                         .background {
                             RoundedRectangle(cornerSize: CGSize(width: 8, height: 8))
@@ -94,7 +94,7 @@ struct NieveScoreCardScene: View {
                         } label: {
                             Text("\(scores[i][3])")
                                 .padding(24)
-                                .foregroundColor(.white)
+                                .foregroundColor(.lightText)
                         }
                         .background {
                             RoundedRectangle(cornerSize: CGSize(width: 8, height: 8))
@@ -105,13 +105,13 @@ struct NieveScoreCardScene: View {
             
             HStack {
                 Circle()
-                    .foregroundColor(.white)
+                    .foregroundColor(.lightText)
                 ForEach(0..<4) { i in
                     Circle()
                         .foregroundColor(.gray)
                         .overlay {
                             Text("\(total(for: i))")
-                                .foregroundColor(.white)
+                                .foregroundColor(.lightText)
                         }
                 }
             }

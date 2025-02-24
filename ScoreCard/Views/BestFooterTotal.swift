@@ -15,7 +15,7 @@ struct BestFooterTotal: View {
             .foregroundColor(.gray)
             .overlay {
                 Text("\(score.value)")
-                    .foregroundColor(.white)
+                    .foregroundColor(.lightText)
             }
     }
 }

@@ -21,7 +21,7 @@ struct MoreScoreButton: View {
         } label: {
             Text("\(viewModel.score)")
                 .padding(24)
-                .foregroundColor(.white)
+                .foregroundColor(.lightText)
         }
         .simultaneousGesture(LongPressGesture().onEnded({ _ in
             canTap = false

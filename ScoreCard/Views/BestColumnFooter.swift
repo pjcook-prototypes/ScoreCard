@@ -13,7 +13,7 @@ struct BestColumnFooter: View {
     var body: some View {
         HStack {
             Circle()
-                .foregroundColor(.white)
+                .foregroundColor(.lightText)
             ForEach(0..<4) { i in
                 BestFooterTotal(score: scores.totals[i])
             }
