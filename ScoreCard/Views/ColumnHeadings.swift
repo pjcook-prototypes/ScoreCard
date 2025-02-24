@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ColumnHeadings: View {
-    @ObservedObject var viewModel: ScoreCardViewModel
+    let ballColors: [Color]
+    var reset: (() -> Void)?
     
     var body: some View {
         HStack {
             Button(action: {
-                viewModel.reset()
+                reset?()
             }) {
                 Circle()
                     .foregroundColor(.white)
@@ -24,7 +25,7 @@ struct ColumnHeadings: View {
                     }
             }
             
-            ForEach(viewModel.ballColors, id: \.self) { color in
+            ForEach(ballColors, id: \.self) { color in
                 Circle()
                     .foregroundColor(color)
             }

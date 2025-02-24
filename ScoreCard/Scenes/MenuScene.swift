@@ -30,6 +30,13 @@ struct MenuScene: View {
                     .padding(.vertical)
             }
             .buttonStyle(.borderedProminent)
+            
+            NavigationLink(destination: BestScoreCardScene()) {
+                Text("Best")
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical)
+            }
+            .buttonStyle(.borderedProminent)
         }
         .padding(.horizontal)
         .navigationTitle("Main Menu")
