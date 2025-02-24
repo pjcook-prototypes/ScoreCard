@@ -18,8 +18,18 @@ struct NieveScoreCardScene: View {
                 .font(.headline)
             
             HStack {
-                Circle()
-                    .foregroundColor(.white)
+                Button(action: {
+                    reset()
+                }) {
+                    Circle()
+                        .foregroundColor(.white)
+                        .overlay {
+                            Text("Clear")
+                                .foregroundColor(.black)
+                            
+                        }
+                }
+                
                 ForEach(ballColors, id: \.self) { color in
                     Circle()
                         .foregroundColor(color)
@@ -38,6 +48,7 @@ struct NieveScoreCardScene: View {
                 LazyVGrid(columns: columns, spacing: 4) {
                     ForEach(0..<18) { i in
                         Circle()
+                            .foregroundColor(Color(uiColor: .lightGray))
                             .overlay {
                                 Text("\(i+1)")
                                     .foregroundColor(.white)
@@ -108,6 +119,11 @@ struct NieveScoreCardScene: View {
         }
         .padding()
         .navigationTitle("Nieve")
+    }
+    
+    private func reset() {
+        gameName = ""
+        scores = Array(repeating: Array(repeating: 0, count: 5), count: 18)
     }
     
     private func total(for column: Int) -> Int {

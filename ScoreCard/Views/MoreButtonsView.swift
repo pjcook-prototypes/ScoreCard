@@ -22,12 +22,7 @@ struct MoreButtonsView: View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 4) {
                 ForEach(0..<18) { i in
-                    Circle()
-                        .overlay {
-                            Text("\(i+1)")
-                                .foregroundColor(.white)
-                            
-                        }
+                    RowHeader(i: i)
                     
                     ForEach(0..<4) { j in
                         MoreScoreButton(viewModel: MoreScoreButtonModel(model: viewModel, row: i, col: j))
