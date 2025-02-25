@@ -27,6 +27,7 @@
 		2E028E8A2D5CB5D2000E6139 /* ScoreCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E028E9B2D5CB5D4000E6139 /* ScoreCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E028EA52D5CB5D4000E6139 /* ScoreCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8DCB142D6DCACF00331670 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +76,7 @@
 		2E028E812D5CB5D2000E6139 = {
 			isa = PBXGroup;
 			children = (
+				2E8DCB142D6DCACF00331670 /* README.md */,
 				2E028E8C2D5CB5D2000E6139 /* ScoreCard */,
 				2E028E9E2D5CB5D4000E6139 /* ScoreCardTests */,
 				2E028EA82D5CB5D4000E6139 /* ScoreCardUITests */,
